@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18D6FEDA28ABAE6E00ED3294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FED928ABAE6E00ED3294 /* AppDelegate.swift */; };
+		18D6FEDC28ABAE6E00ED3294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEDB28ABAE6E00ED3294 /* SceneDelegate.swift */; };
+		18D6FEDE28ABAE6E00ED3294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEDD28ABAE6E00ED3294 /* ViewController.swift */; };
+		18D6FEE128ABAE6E00ED3294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */; };
+		18D6FEE328ABAE7100ED3294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D6FEE228ABAE7100ED3294 /* Assets.xcassets */; };
+		18D6FEE628ABAE7100ED3294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D6FEE428ABAE7100ED3294 /* LaunchScreen.storyboard */; };
+		18D6FEF128ABAE7200ED3294 /* Senstone_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEF028ABAE7200ED3294 /* Senstone_AssessmentTests.swift */; };
+		18D6FEFB28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEFA28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift */; };
+		18D6FEFD28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEFC28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18D6FEED28ABAE7200ED3294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D6FECE28ABAE6E00ED3294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D6FED528ABAE6E00ED3294;
+			remoteInfo = "Senstone Assessment";
+		};
+		18D6FEF728ABAE7200ED3294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D6FECE28ABAE6E00ED3294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D6FED528ABAE6E00ED3294;
+			remoteInfo = "Senstone Assessment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18D6FED628ABAE6E00ED3294 /* Senstone Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senstone Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D6FED928ABAE6E00ED3294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18D6FEDB28ABAE6E00ED3294 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18D6FEDD28ABAE6E00ED3294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D6FEE028ABAE6E00ED3294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18D6FEE228ABAE7100ED3294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D6FEE528ABAE7100ED3294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18D6FEE728ABAE7100ED3294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D6FEEC28ABAE7200ED3294 /* Senstone AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senstone AssessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D6FEF028ABAE7200ED3294 /* Senstone_AssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senstone_AssessmentTests.swift; sourceTree = "<group>"; };
+		18D6FEF628ABAE7200ED3294 /* Senstone AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senstone AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D6FEFA28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senstone_AssessmentUITests.swift; sourceTree = "<group>"; };
+		18D6FEFC28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senstone_AssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D6FED328ABAE6E00ED3294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D6FEE928ABAE7200ED3294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D6FEF328ABAE7200ED3294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18D6FECD28ABAE6E00ED3294 = {
+			isa = PBXGroup;
+			children = (
+				18D6FED828ABAE6E00ED3294 /* Senstone Assessment */,
+				18D6FEEF28ABAE7200ED3294 /* Senstone AssessmentTests */,
+				18D6FEF928ABAE7200ED3294 /* Senstone AssessmentUITests */,
+				18D6FED728ABAE6E00ED3294 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18D6FED728ABAE6E00ED3294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FED628ABAE6E00ED3294 /* Senstone Assessment.app */,
+				18D6FEEC28ABAE7200ED3294 /* Senstone AssessmentTests.xctest */,
+				18D6FEF628ABAE7200ED3294 /* Senstone AssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D6FED828ABAE6E00ED3294 /* Senstone Assessment */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FED928ABAE6E00ED3294 /* AppDelegate.swift */,
+				18D6FEDB28ABAE6E00ED3294 /* SceneDelegate.swift */,
+				18D6FEDD28ABAE6E00ED3294 /* ViewController.swift */,
+				18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */,
+				18D6FEE228ABAE7100ED3294 /* Assets.xcassets */,
+				18D6FEE428ABAE7100ED3294 /* LaunchScreen.storyboard */,
+				18D6FEE728ABAE7100ED3294 /* Info.plist */,
+			);
+			path = "Senstone Assessment";
+			sourceTree = "<group>";
+		};
+		18D6FEEF28ABAE7200ED3294 /* Senstone AssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FEF028ABAE7200ED3294 /* Senstone_AssessmentTests.swift */,
+			);
+			path = "Senstone AssessmentTests";
+			sourceTree = "<group>";
+		};
+		18D6FEF928ABAE7200ED3294 /* Senstone AssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FEFA28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift */,
+				18D6FEFC28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift */,
+			);
+			path = "Senstone AssessmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D6FED528ABAE6E00ED3294 /* Senstone Assessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D6FF0028ABAE7200ED3294 /* Build configuration list for PBXNativeTarget "Senstone Assessment" */;
+			buildPhases = (
+				18D6FED228ABAE6E00ED3294 /* Sources */,
+				18D6FED328ABAE6E00ED3294 /* Frameworks */,
+				18D6FED428ABAE6E00ED3294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Senstone Assessment";
+			productName = "Senstone Assessment";
+			productReference = 18D6FED628ABAE6E00ED3294 /* Senstone Assessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18D6FEEB28ABAE7200ED3294 /* Senstone AssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D6FF0328ABAE7200ED3294 /* Build configuration list for PBXNativeTarget "Senstone AssessmentTests" */;
+			buildPhases = (
+				18D6FEE828ABAE7200ED3294 /* Sources */,
+				18D6FEE928ABAE7200ED3294 /* Frameworks */,
+				18D6FEEA28ABAE7200ED3294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D6FEEE28ABAE7200ED3294 /* PBXTargetDependency */,
+			);
+			name = "Senstone AssessmentTests";
+			productName = "Senstone AssessmentTests";
+			productReference = 18D6FEEC28ABAE7200ED3294 /* Senstone AssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18D6FEF528ABAE7200ED3294 /* Senstone AssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D6FF0628ABAE7200ED3294 /* Build configuration list for PBXNativeTarget "Senstone AssessmentUITests" */;
+			buildPhases = (
+				18D6FEF228ABAE7200ED3294 /* Sources */,
+				18D6FEF328ABAE7200ED3294 /* Frameworks */,
+				18D6FEF428ABAE7200ED3294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D6FEF828ABAE7200ED3294 /* PBXTargetDependency */,
+			);
+			name = "Senstone AssessmentUITests";
+			productName = "Senstone AssessmentUITests";
+			productReference = 18D6FEF628ABAE7200ED3294 /* Senstone AssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D6FECE28ABAE6E00ED3294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					18D6FED528ABAE6E00ED3294 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					18D6FEEB28ABAE7200ED3294 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 18D6FED528ABAE6E00ED3294;
+					};
+					18D6FEF528ABAE7200ED3294 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 18D6FED528ABAE6E00ED3294;
+					};
+				};
+			};
+			buildConfigurationList = 18D6FED128ABAE6E00ED3294 /* Build configuration list for PBXProject "Senstone Assessment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D6FECD28ABAE6E00ED3294;
+			productRefGroup = 18D6FED728ABAE6E00ED3294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D6FED528ABAE6E00ED3294 /* Senstone Assessment */,
+				18D6FEEB28ABAE7200ED3294 /* Senstone AssessmentTests */,
+				18D6FEF528ABAE7200ED3294 /* Senstone AssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D6FED428ABAE6E00ED3294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D6FEE628ABAE7100ED3294 /* LaunchScreen.storyboard in Resources */,
+				18D6FEE328ABAE7100ED3294 /* Assets.xcassets in Resources */,
+				18D6FEE128ABAE6E00ED3294 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D6FEEA28ABAE7200ED3294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D6FEF428ABAE7200ED3294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D6FED228ABAE6E00ED3294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D6FEDE28ABAE6E00ED3294 /* ViewController.swift in Sources */,
+				18D6FEDA28ABAE6E00ED3294 /* AppDelegate.swift in Sources */,
+				18D6FEDC28ABAE6E00ED3294 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D6FEE828ABAE7200ED3294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D6FEF128ABAE7200ED3294 /* Senstone_AssessmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D6FEF228ABAE7200ED3294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D6FEFB28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift in Sources */,
+				18D6FEFD28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18D6FEEE28ABAE7200ED3294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18D6FED528ABAE6E00ED3294 /* Senstone Assessment */;
+			targetProxy = 18D6FEED28ABAE7200ED3294 /* PBXContainerItemProxy */;
+		};
+		18D6FEF828ABAE7200ED3294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18D6FED528ABAE6E00ED3294 /* Senstone Assessment */;
+			targetProxy = 18D6FEF728ABAE7200ED3294 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D6FEE028ABAE6E00ED3294 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18D6FEE428ABAE7100ED3294 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D6FEE528ABAE7100ED3294 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D6FEFE28ABAE7200ED3294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18D6FEFF28ABAE7200ED3294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D6FF0128ABAE7200ED3294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDYDV77X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Senstone Assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senstone.Senstone-Assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D6FF0228ABAE7200ED3294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDYDV77X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Senstone Assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senstone.Senstone-Assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18D6FF0428ABAE7200ED3294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDYDV77X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senstone.Senstone-AssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senstone Assessment.app/Senstone Assessment";
+			};
+			name = Debug;
+		};
+		18D6FF0528ABAE7200ED3294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDYDV77X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senstone.Senstone-AssessmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senstone Assessment.app/Senstone Assessment";
+			};
+			name = Release;
+		};
+		18D6FF0728ABAE7200ED3294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDYDV77X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senstone.Senstone-AssessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Senstone Assessment";
+			};
+			name = Debug;
+		};
+		18D6FF0828ABAE7200ED3294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDYDV77X7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.senstone.Senstone-AssessmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Senstone Assessment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D6FED128ABAE6E00ED3294 /* Build configuration list for PBXProject "Senstone Assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D6FEFE28ABAE7200ED3294 /* Debug */,
+				18D6FEFF28ABAE7200ED3294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D6FF0028ABAE7200ED3294 /* Build configuration list for PBXNativeTarget "Senstone Assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D6FF0128ABAE7200ED3294 /* Debug */,
+				18D6FF0228ABAE7200ED3294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D6FF0328ABAE7200ED3294 /* Build configuration list for PBXNativeTarget "Senstone AssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D6FF0428ABAE7200ED3294 /* Debug */,
+				18D6FF0528ABAE7200ED3294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D6FF0628ABAE7200ED3294 /* Build configuration list for PBXNativeTarget "Senstone AssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D6FF0728ABAE7200ED3294 /* Debug */,
+				18D6FF0828ABAE7200ED3294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D6FECE28ABAE6E00ED3294 /* Project object */;
+}
