@@ -39,6 +39,10 @@ class BluetoothDevicesVC: UIViewController {
         presenter?.getAllBLEDevices()
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.titleLabel.text = "Senstone"
+    }
 }
 
 extension BluetoothDevicesVC: UITableViewDataSource, UITableViewDelegate {
@@ -59,10 +63,15 @@ extension BluetoothDevicesVC: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        self.titleLabel.text = "Connecting..."
         self.presenter?.connectToDevice(deviceIndex: indexPath.row)
        
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Available devices"
+    }
+    
 }
 
 extension BluetoothDevicesVC: BluetoothDevicesVCProtocol {
