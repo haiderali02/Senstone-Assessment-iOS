@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class BLEDeviceCell: UITableViewCell {
 
@@ -31,9 +32,13 @@ class BLEDeviceCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setData(with bleDevice: BLEDevice) {
-        self.deviceNameLabel.text = bleDevice.name
-        self.descriptionLabel.text = "RSSI: \(bleDevice.rssiNumber)"
+    func setData(with bleDevice: CBPeripheral) {
+        self.deviceNameLabel.text = bleDevice.name ?? "UnNamed"
+        self.descriptionLabel.text = "RSSI:"
     }
     
+    func setData(with bleDevice: DeviceEntity) {
+        self.deviceNameLabel.text = bleDevice.deviceName
+        self.descriptionLabel.text = "RSSI: \(bleDevice.deviceRSSINumber)"
+    }
 }

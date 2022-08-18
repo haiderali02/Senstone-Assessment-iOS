@@ -19,8 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.frame = UIScreen.main.bounds
         
-        let navController = BLEDevicesRouter.createModule()
-        window.rootViewController = navController
+        
+       let navController = UINavigationController(rootViewController: BluetoothDevicesRouter.setupModule() ?? UIViewController())
+        
+        window.rootViewController =  navController
         window.makeKeyAndVisible()
         
         self.window = window
