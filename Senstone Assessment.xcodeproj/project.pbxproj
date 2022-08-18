@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183AEF1D28AD3967007B70C3 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183AEF1C28AD3967007B70C3 /* BluetoothManager.swift */; };
+		1885AC1128AE0AE100669BAA /* BLEConnectedDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885AC1028AE0AE100669BAA /* BLEConnectedDeviceViewController.swift */; };
 		18D6FEDA28ABAE6E00ED3294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FED928ABAE6E00ED3294 /* AppDelegate.swift */; };
 		18D6FEDC28ABAE6E00ED3294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEDB28ABAE6E00ED3294 /* SceneDelegate.swift */; };
-		18D6FEDE28ABAE6E00ED3294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEDD28ABAE6E00ED3294 /* ViewController.swift */; };
 		18D6FEE128ABAE6E00ED3294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */; };
 		18D6FEE328ABAE7100ED3294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D6FEE228ABAE7100ED3294 /* Assets.xcassets */; };
 		18D6FEE628ABAE7100ED3294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D6FEE428ABAE7100ED3294 /* LaunchScreen.storyboard */; };
 		18D6FEF128ABAE7200ED3294 /* Senstone_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEF028ABAE7200ED3294 /* Senstone_AssessmentTests.swift */; };
 		18D6FEFB28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEFA28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift */; };
 		18D6FEFD28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FEFC28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift */; };
+		18D6FF0C28ABB64A00ED3294 /* BLEDevicesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF0B28ABB64A00ED3294 /* BLEDevicesProtocols.swift */; };
+		18D6FF0E28ABBA6100ED3294 /* BLEDeviceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF0D28ABBA6100ED3294 /* BLEDeviceEntity.swift */; };
+		18D6FF1028ABBF8E00ED3294 /* BLEDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF0F28ABBF8E00ED3294 /* BLEDevicesViewController.swift */; };
+		18D6FF1228ABC19700ED3294 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF1128ABC19700ED3294 /* Utils.swift */; };
+		18D6FF1428ABC75900ED3294 /* BLEDevicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF1328ABC75900ED3294 /* BLEDevicesPresenter.swift */; };
+		18D6FF1728ABC8C600ED3294 /* BLEDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF1628ABC8C600ED3294 /* BLEDeviceCell.swift */; };
+		18D6FF1928ABCB5E00ED3294 /* BLEDevicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF1828ABCB5E00ED3294 /* BLEDevicesInteractor.swift */; };
+		18D6FF1B28ABCD3B00ED3294 /* BLEDevicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6FF1A28ABCD3B00ED3294 /* BLEDevicesRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183AEF1C28AD3967007B70C3 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		1885AC1028AE0AE100669BAA /* BLEConnectedDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnectedDeviceViewController.swift; sourceTree = "<group>"; };
 		18D6FED628ABAE6E00ED3294 /* Senstone Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senstone Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D6FED928ABAE6E00ED3294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D6FEDB28ABAE6E00ED3294 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18D6FEDD28ABAE6E00ED3294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18D6FEE028ABAE6E00ED3294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D6FEE228ABAE7100ED3294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D6FEE528ABAE7100ED3294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,14 @@
 		18D6FEF628ABAE7200ED3294 /* Senstone AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senstone AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D6FEFA28ABAE7200ED3294 /* Senstone_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senstone_AssessmentUITests.swift; sourceTree = "<group>"; };
 		18D6FEFC28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senstone_AssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18D6FF0B28ABB64A00ED3294 /* BLEDevicesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevicesProtocols.swift; sourceTree = "<group>"; };
+		18D6FF0D28ABBA6100ED3294 /* BLEDeviceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDeviceEntity.swift; sourceTree = "<group>"; };
+		18D6FF0F28ABBF8E00ED3294 /* BLEDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevicesViewController.swift; sourceTree = "<group>"; };
+		18D6FF1128ABC19700ED3294 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		18D6FF1328ABC75900ED3294 /* BLEDevicesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevicesPresenter.swift; sourceTree = "<group>"; };
+		18D6FF1628ABC8C600ED3294 /* BLEDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDeviceCell.swift; sourceTree = "<group>"; };
+		18D6FF1828ABCB5E00ED3294 /* BLEDevicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevicesInteractor.swift; sourceTree = "<group>"; };
+		18D6FF1A28ABCD3B00ED3294 /* BLEDevicesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevicesRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183AEF1A28AD3943007B70C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				183AEF1B28AD394B007B70C3 /* BluetoothManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		183AEF1B28AD394B007B70C3 /* BluetoothManager */ = {
+			isa = PBXGroup;
+			children = (
+				183AEF1C28AD3967007B70C3 /* BluetoothManager.swift */,
+			);
+			path = BluetoothManager;
+			sourceTree = "<group>";
+		};
+		1885AC0F28AE0AB100669BAA /* BLEConnectedDevice */ = {
+			isa = PBXGroup;
+			children = (
+				1885AC1028AE0AE100669BAA /* BLEConnectedDeviceViewController.swift */,
+			);
+			path = BLEConnectedDevice;
+			sourceTree = "<group>";
+		};
 		18D6FECD28ABAE6E00ED3294 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +141,11 @@
 		18D6FED828ABAE6E00ED3294 /* Senstone Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				18D6FF0928ABB61400ED3294 /* Modules */,
+				18D6FF1528ABC8A300ED3294 /* View */,
+				183AEF1A28AD3943007B70C3 /* Helpers */,
 				18D6FED928ABAE6E00ED3294 /* AppDelegate.swift */,
 				18D6FEDB28ABAE6E00ED3294 /* SceneDelegate.swift */,
-				18D6FEDD28ABAE6E00ED3294 /* ViewController.swift */,
-				18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */,
 				18D6FEE228ABAE7100ED3294 /* Assets.xcassets */,
 				18D6FEE428ABAE7100ED3294 /* LaunchScreen.storyboard */,
 				18D6FEE728ABAE7100ED3294 /* Info.plist */,
@@ -125,6 +168,38 @@
 				18D6FEFC28ABAE7200ED3294 /* Senstone_AssessmentUITestsLaunchTests.swift */,
 			);
 			path = "Senstone AssessmentUITests";
+			sourceTree = "<group>";
+		};
+		18D6FF0928ABB61400ED3294 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FF0A28ABB61C00ED3294 /* BLEDevicesList */,
+				1885AC0F28AE0AB100669BAA /* BLEConnectedDevice */,
+				18D6FF1128ABC19700ED3294 /* Utils.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		18D6FF0A28ABB61C00ED3294 /* BLEDevicesList */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FF0B28ABB64A00ED3294 /* BLEDevicesProtocols.swift */,
+				18D6FF0F28ABBF8E00ED3294 /* BLEDevicesViewController.swift */,
+				18D6FF1328ABC75900ED3294 /* BLEDevicesPresenter.swift */,
+				18D6FF0D28ABBA6100ED3294 /* BLEDeviceEntity.swift */,
+				18D6FF1828ABCB5E00ED3294 /* BLEDevicesInteractor.swift */,
+				18D6FF1A28ABCD3B00ED3294 /* BLEDevicesRouter.swift */,
+			);
+			path = BLEDevicesList;
+			sourceTree = "<group>";
+		};
+		18D6FF1528ABC8A300ED3294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */,
+				18D6FF1628ABC8C600ED3294 /* BLEDeviceCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D6FEDE28ABAE6E00ED3294 /* ViewController.swift in Sources */,
+				18D6FF1B28ABCD3B00ED3294 /* BLEDevicesRouter.swift in Sources */,
+				18D6FF1028ABBF8E00ED3294 /* BLEDevicesViewController.swift in Sources */,
+				18D6FF1928ABCB5E00ED3294 /* BLEDevicesInteractor.swift in Sources */,
+				18D6FF1428ABC75900ED3294 /* BLEDevicesPresenter.swift in Sources */,
 				18D6FEDA28ABAE6E00ED3294 /* AppDelegate.swift in Sources */,
+				18D6FF1228ABC19700ED3294 /* Utils.swift in Sources */,
+				18D6FF1728ABC8C600ED3294 /* BLEDeviceCell.swift in Sources */,
+				183AEF1D28AD3967007B70C3 /* BluetoothManager.swift in Sources */,
+				18D6FF0E28ABBA6100ED3294 /* BLEDeviceEntity.swift in Sources */,
 				18D6FEDC28ABAE6E00ED3294 /* SceneDelegate.swift in Sources */,
+				1885AC1128AE0AE100669BAA /* BLEConnectedDeviceViewController.swift in Sources */,
+				18D6FF0C28ABB64A00ED3294 /* BLEDevicesProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +529,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +558,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

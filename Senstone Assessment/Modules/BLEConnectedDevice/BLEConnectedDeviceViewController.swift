@@ -9,21 +9,25 @@ import UIKit
 
 class BLEConnectedDeviceViewController: UIViewController {
 
+    // MARK: - OUTLETS -
+    
+    @IBOutlet weak var deviceNameLabel: UILabel!
+    @IBOutlet weak var deviceDescriptionLabel: UILabel!
+    @IBOutlet weak var currentDeviceNameLabel: UILabel!
+    @IBOutlet weak var currentDeviceRSSILabel: UILabel!
+    @IBOutlet weak var disconnectButton: UIButton!
+    
+    // MARK: - View Life Cycle -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Actions -
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapDisconnect(_ sender: UIButton) {
+        
     }
-    */
-
 }

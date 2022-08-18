@@ -20,7 +20,7 @@ protocol ViewToPresenterBLEDeviceListProtocol: AnyObject {
     func refreshView()
     
     func numberOfRowsInSection() -> Int
-    func setCell(tableView: UITableView, forRowAt IndexPath: IndexPath) -> UITableView
+    func setCell(tableView: UITableView, forRowAt IndexPath: IndexPath) -> UITableViewCell
     func didSelectRowAt(index: Int)
     func taBLEViewCellHeight() -> CGFloat
 }
@@ -32,14 +32,17 @@ protocol PresenterToViewBLEDeviceListProtocol: AnyObject {
     func startBLEServices()
     func stopBLEServices()
     func didReceiveBLEDevices()
-    func didFailToReceiveBLEDevices()
+    func didFailToReceiveBLEDevices(withError: String)
 }
 
 // MARK: - Presenter To Interactor (Presenter -> Interactor) -
 
 protocol PresenterToInteractorBLEDeviceListProtocol: AnyObject {
     
-    
+    var presenter: InteractorToPresenterBLEDeviceListProtocol? { get set }
+    var availableDevices: [BLEDevice]? { get set }
+    func fetchAvailableDevices()
+    func makeConnectionWithDevice(at index: Int)
     
 }
 
@@ -47,10 +50,14 @@ protocol PresenterToInteractorBLEDeviceListProtocol: AnyObject {
 
 protocol InteractorToPresenterBLEDeviceListProtocol: AnyObject {
     
+    func didFetchBLEDevices(devices: [BLEDevice])
+    func didFailToFetchDevices(error: String)
+    
 }
 
 // MARK: - Presenter To Router (Presenter -> Router) -
 
 protocol PresenterToRouterBLEDeviceListProtocol: AnyObject {
-    
+    static func createModule() -> UINavigationController?
+    func pushToConnectedScreen() 
 }

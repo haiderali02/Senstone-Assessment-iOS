@@ -12,6 +12,13 @@ class BLEDeviceCell: UITableViewCell {
     static let identifier: String = "BLEDeviceCell"
     
     @IBOutlet weak var deviceNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var itemBgView: UIView! {
+        didSet {
+            itemBgView.clipsToBounds = true
+            itemBgView.layer.cornerRadius = 8
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +33,7 @@ class BLEDeviceCell: UITableViewCell {
 
     func setData(with bleDevice: BLEDevice) {
         self.deviceNameLabel.text = bleDevice.name
+        self.descriptionLabel.text = "RSSI: \(bleDevice.rssiNumber)"
     }
     
 }

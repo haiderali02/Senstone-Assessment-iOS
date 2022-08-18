@@ -7,6 +7,12 @@
 
 import Foundation
 
-struct BLEDevice: Codable {
-    let name: String
+struct BLEDevicesList: Decodable {
+    var results: [BLEDevice]?
+}
+
+struct BLEDevice: Decodable {
+    var name: String
+    var description: String
+    var rssiNumber: String
 }
