@@ -6,17 +6,27 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 protocol ConnectedBleDeviceInteractorProtocol: AnyObject {
-    func disConnectDevice()
+    func disConnectDevice(_ device: CBPeripheral)
 }
 
 class ConnectedBleDeviceInteractor {
     weak var presenter: ConnectedBleDevicePresenterProtocol?
+    let blutoothManager = BluetoothManager()
 }
 
 extension ConnectedBleDeviceInteractor: ConnectedBleDeviceInteractorProtocol {
-    func disConnectDevice() {
-        
+    
+    func disConnectDevice(_ device: CBPeripheral) {
+        blutoothManager.disconnectDevice(device: device)
+        blutoothManager.delegate = self
+    }
+}
+
+extension ConnectedBleDeviceInteractor: BluetoothManagerProtocol {
+    func didDisconnectDevice() {
+        self.presenter?.didDisconnectedSuccessfully()
     }
 }

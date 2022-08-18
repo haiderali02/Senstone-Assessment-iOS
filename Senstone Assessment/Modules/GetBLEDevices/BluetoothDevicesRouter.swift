@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 protocol BluetoothDevicesRouterProtocol: AnyObject {
-    func navigateToConnectedDevice(view: BluetoothDevicesVCProtocol)
+    func navigateToConnectedDevice(view: BluetoothDevicesVCProtocol, device: CBPeripheral)
 }
  
 class BluetoothDevicesRouter: NSObject {
@@ -36,10 +37,11 @@ class BluetoothDevicesRouter: NSObject {
 }
 
 extension BluetoothDevicesRouter: BluetoothDevicesRouterProtocol {
-    func navigateToConnectedDevice(view: BluetoothDevicesVCProtocol) {
+    func navigateToConnectedDevice(view: BluetoothDevicesVCProtocol, device: CBPeripheral) {
         
         if let allDevicesVC = view as? BluetoothDevicesVC {
             if let connectedDeviceVC = ConnectedBleDeviceRouter.setupModule() {
+                connectedDeviceVC.device = device
                 allDevicesVC.navigationController?.pushViewController(connectedDeviceVC, animated: true)
             }
         }

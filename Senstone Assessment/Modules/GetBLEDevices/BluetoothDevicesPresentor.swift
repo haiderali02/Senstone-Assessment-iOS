@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 protocol BluetoothDevicesPresentorProtol: AnyObject {
     func getAllBLEDevices()
     func didGetDevices(devices: [DeviceEntity])
-    func connectToDevice(device: DeviceEntity)
-    func didConnectedSuccessfully()
+    func connectToDevice(deviceIndex: Int)
+    func didConnectedSuccessfully(_ device: CBPeripheral)
 }
 
 class BluetoothDevicesPresentor {
@@ -30,12 +31,12 @@ class BluetoothDevicesPresentor {
 
 extension BluetoothDevicesPresentor: BluetoothDevicesPresentorProtol {
     
-    func didConnectedSuccessfully() {
-        self.router?.navigateToConnectedDevice(view: view)
+    func didConnectedSuccessfully(_ device: CBPeripheral) {
+        self.router?.navigateToConnectedDevice(view: view, device: device)
     }
     
-    func connectToDevice(device: DeviceEntity) {
-        interactor?.connectToDevice(device: device)
+    func connectToDevice(deviceIndex: Int) {
+        interactor?.connectToDevice(deviceIndex: deviceIndex)
     }
     
     func getAllBLEDevices() {

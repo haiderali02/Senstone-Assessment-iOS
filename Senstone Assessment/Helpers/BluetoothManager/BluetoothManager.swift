@@ -11,7 +11,15 @@ import CoreBluetooth
 protocol BluetoothManagerProtocol: AnyObject {
     func didReceiveDevices(devices: [DeviceEntity])
     func didFailToReceiveDevicesWith(error: String)
-    func didConnectedToDevice()
+    func didConnectedToDevice(_ device: CBPeripheral)
+    func didDisconnectDevice()
+}
+
+extension BluetoothManagerProtocol {
+    func didReceiveDevices(devices: [DeviceEntity]) {}
+    func didFailToReceiveDevicesWith(error: String) {}
+    func didConnectedToDevice(_ device: CBPeripheral) {}
+    func didDisconnectDevice() {}
 }
 
 class BluetoothManager: NSObject {
@@ -27,10 +35,22 @@ class BluetoothManager: NSObject {
         self.centeralManager = CBCentralManager(delegate: self, queue: .main)
     }
     
-    func connectToDevice() {
-        self.delegate?.didConnectedToDevice()
+    func connectToDevice(connect atIndex: Int) {
+        
+        let device = peripheralsDevices[atIndex]
+        
+        centeralManager?.connect(device)
+        
     }
-    
+    func disconnectDevice(device: CBPeripheral) {
+        centeralManager?.cancelPeripheralConnection(device)
+        
+        // Cancel connection don't provide any call back, So we are adding self handler to notify that the function have triggered!
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.delegate?.didDisconnectDevice()
+        }
+    }
 }
 
 extension BluetoothManager: CBCentralManagerDelegate {
@@ -60,6 +80,10 @@ extension BluetoothManager: CBCentralManagerDelegate {
        
         let device: DeviceEntity = .init(id: peripheral.identifier, deviceName: peripheral.name ?? "UnKnown", deviceRSSINumber: "\(RSSI)", deviceDescription: peripheral.description)
         
+        if !self.peripheralsDevices.contains(peripheral) {
+            self.peripheralsDevices.append(peripheral)
+        }
+        
         if !self.devices.contains(where: { deviceEntity in
             device.id == deviceEntity.id
         }) {
@@ -69,5 +93,14 @@ extension BluetoothManager: CBCentralManagerDelegate {
         self.delegate?.didReceiveDevices(devices: self.devices)
     }
     
+    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        
+        self.delegate?.didConnectedToDevice(peripheral)
+        print("Connected: \(peripheral)")
+        
+    }
+    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+        print("Fail to Connect: \(String(describing: error?.localizedDescription))")
+    }
 }
 

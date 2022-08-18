@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import CoreBluetooth
 
 
 protocol ConnectedBleDevicePresenterProtocol: AnyObject {
-    func disconnectDevice()
-    func didDisconnectDevice()
+    func disconnectDevice(_ device: CBPeripheral)
+    func didDisconnectedSuccessfully()
 }
 
 class ConnectedBleDevicePresenter {
@@ -29,11 +30,10 @@ class ConnectedBleDevicePresenter {
 
 extension ConnectedBleDevicePresenter: ConnectedBleDevicePresenterProtocol {
     
-    func disconnectDevice() {
-        // ASK INTERACTOR to disconnect device
+    func disconnectDevice(_ device: CBPeripheral) {
+        self.interactor?.disConnectDevice(device)
     }
-    
-    func didDisconnectDevice() {
-        // Response from Interactor -> Let know the view
+    func didDisconnectedSuccessfully() {
+        view.didDisconnectedSuccessfully()
     }
 }

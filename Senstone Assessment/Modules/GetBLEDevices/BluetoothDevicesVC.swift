@@ -60,7 +60,7 @@ extension BluetoothDevicesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        self.presenter?.connectToDevice(device: devices[indexPath.row])
+        self.presenter?.connectToDevice(deviceIndex: indexPath.row)
        
     }
 }

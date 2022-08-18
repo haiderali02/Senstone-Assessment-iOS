@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 protocol BluetoothDevicesInteratorProtocol: AnyObject {
     
     func getAllDevices()
-    func connectToDevice(device: DeviceEntity)
+    func connectToDevice(deviceIndex: Int)
 }
 
 class BluetoothDevicesInterator: NSObject {
@@ -21,8 +22,8 @@ class BluetoothDevicesInterator: NSObject {
 
 extension BluetoothDevicesInterator: BluetoothDevicesInteratorProtocol {
     
-    func connectToDevice(device: DeviceEntity) {
-        bluetoothManager.connectToDevice()
+    func connectToDevice(deviceIndex: Int) {
+        bluetoothManager.connectToDevice(connect: deviceIndex)
     }
     
     func getAllDevices() {
@@ -33,9 +34,10 @@ extension BluetoothDevicesInterator: BluetoothDevicesInteratorProtocol {
 
 extension BluetoothDevicesInterator: BluetoothManagerProtocol {
     
-    func didConnectedToDevice() {
-        self.presenter?.didConnectedSuccessfully()
+    func didConnectedToDevice(_ device: CBPeripheral) {
+        self.presenter?.didConnectedSuccessfully(device)
     }
+    
     func didReceiveDevices(devices: [DeviceEntity]) {
         self.presenter?.didGetDevices(devices: devices)
     }
