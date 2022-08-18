@@ -14,7 +14,6 @@ protocol BluetoothDevicesVCProtocol: AnyObject {
 
 class BluetoothDevicesVC: UIViewController {
 
-    
     // MARK: OUTLETS -
     
     @IBOutlet weak var titleLabel: UILabel!

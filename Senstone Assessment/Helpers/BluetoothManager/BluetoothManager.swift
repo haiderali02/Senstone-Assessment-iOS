@@ -31,9 +31,11 @@ class BluetoothManager: NSObject {
     func connectToDevice(connect atIndex: Int) {
         
         let device = peripheralsDevices[atIndex]
-        
-        centeralManager?.connect(device)
-        
+        if device.state != .connected {
+            centeralManager?.connect(device)
+        } else {
+            self.delegate?.didFailToReceiveDevicesWith(error: "Device is Busy or unable to make connection right now.")
+        }
     }
     func disconnectDevice(device: CBPeripheral) {
         centeralManager?.cancelPeripheralConnection(device)
@@ -55,7 +57,7 @@ extension BluetoothManager: CBCentralManagerDelegate {
             delegate?.didFailToReceiveDevicesWith(error: "Device Power Off")
         case .poweredOn:
             print("Power On")
-            
+            self.centeralManager?.scanForPeripherals(withServices: nil)
         case .unknown:
             delegate?.didFailToReceiveDevicesWith(error: "Unable to detect device")
         case .resetting:
