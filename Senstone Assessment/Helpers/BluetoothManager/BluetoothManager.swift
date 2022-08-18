@@ -15,13 +15,6 @@ protocol BluetoothManagerProtocol: AnyObject {
     func didDisconnectDevice()
 }
 
-extension BluetoothManagerProtocol {
-    func didReceiveDevices(devices: [DeviceEntity]) {}
-    func didFailToReceiveDevicesWith(error: String) {}
-    func didConnectedToDevice(_ device: CBPeripheral) {}
-    func didDisconnectDevice() {}
-}
-
 class BluetoothManager: NSObject {
     
     private var centeralManager: CBCentralManager?
@@ -62,7 +55,7 @@ extension BluetoothManager: CBCentralManagerDelegate {
             delegate?.didFailToReceiveDevicesWith(error: "Device Power Off")
         case .poweredOn:
             print("Power On")
-            self.centeralManager?.scanForPeripherals(withServices: nil)
+            
         case .unknown:
             delegate?.didFailToReceiveDevicesWith(error: "Unable to detect device")
         case .resetting:
@@ -104,3 +97,9 @@ extension BluetoothManager: CBCentralManagerDelegate {
     }
 }
 
+extension BluetoothManagerProtocol {
+    func didReceiveDevices(devices: [DeviceEntity]) {}
+    func didFailToReceiveDevicesWith(error: String) {}
+    func didConnectedToDevice(_ device: CBPeripheral) {}
+    func didDisconnectDevice() {}
+}

@@ -115,7 +115,7 @@
 			path = BluetoothManager;
 			sourceTree = "<group>";
 		};
-		1885AC0F28AE0AB100669BAA /* ConnectBleDevice */ = {
+		1885AC0F28AE0AB100669BAA /* ConnectBLEDevice */ = {
 			isa = PBXGroup;
 			children = (
 				1885AC2028AE3FB800669BAA /* ConnectedBleDeviceVC.swift */,
@@ -123,7 +123,7 @@
 				1885AC2428AE410E00669BAA /* ConnectedBleDevicePresenter.swift */,
 				1885AC2628AE413800669BAA /* ConnectedBleDeviceRouter.swift */,
 			);
-			path = ConnectBleDevice;
+			path = ConnectBLEDevice;
 			sourceTree = "<group>";
 		};
 		1885AC1428AE171F00669BAA /* Supporting Files */ = {
@@ -135,7 +135,7 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1885AC1528AE247D00669BAA /* GetBLEDevices */ = {
+		1885AC1528AE247D00669BAA /* BLEDevices */ = {
 			isa = PBXGroup;
 			children = (
 				1885AC1C28AE25A800669BAA /* BluetoothDevicesVC.swift */,
@@ -144,7 +144,15 @@
 				1885AC1A28AE255700669BAA /* BluetoothDevicesRouter.swift */,
 				1885AC1E28AE288C00669BAA /* DeviceEntity.swift */,
 			);
-			path = GetBLEDevices;
+			path = BLEDevices;
+			sourceTree = "<group>";
+		};
+		1885AC2828AE5C4200669BAA /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18D6FF1628ABC8C600ED3294 /* BLEDeviceCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		18D6FECD28ABAE6E00ED3294 = {
@@ -171,8 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				18D6FF0928ABB61400ED3294 /* Modules */,
-				1885AC1428AE171F00669BAA /* Supporting Files */,
 				18D6FF1528ABC8A300ED3294 /* View */,
+				1885AC1428AE171F00669BAA /* Supporting Files */,
 				183AEF1A28AD3943007B70C3 /* Helpers */,
 				18D6FEE228ABAE7100ED3294 /* Assets.xcassets */,
 				18D6FEE428ABAE7100ED3294 /* LaunchScreen.storyboard */,
@@ -201,8 +209,8 @@
 		18D6FF0928ABB61400ED3294 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1885AC1528AE247D00669BAA /* GetBLEDevices */,
-				1885AC0F28AE0AB100669BAA /* ConnectBleDevice */,
+				1885AC1528AE247D00669BAA /* BLEDevices */,
+				1885AC0F28AE0AB100669BAA /* ConnectBLEDevice */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -211,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				18D6FEDF28ABAE6E00ED3294 /* Main.storyboard */,
-				18D6FF1628ABC8C600ED3294 /* BLEDeviceCell.swift */,
+				1885AC2828AE5C4200669BAA /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
